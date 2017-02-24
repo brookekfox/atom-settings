@@ -1,0 +1,38 @@
+"*":
+  "SFTP-deployment": {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "593fe7f6-d159-4101-9898-9b52b61c806f"
+  autosave:
+    enabled: true
+  core:
+    disabledPackages: [
+      "linter-haml"
+      "emmet"
+      "whitespace"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+    useShadowDOM: false
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
+  linter:
+    showErrorPanel: false
+  "linter-haml": {}
+  minimap: {}
+  react: {}
+  welcome:
+    showOnStartup: false
+".java.source":
+  editor:
+    showIndentGuide: false
