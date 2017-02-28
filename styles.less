@@ -22,12 +22,16 @@
 
 
 // ----------------------------------------------- TREE VIEW
-.tree-view {
-  background-color: @lightgrey;
-  font-size: 0.9em;
-  font-family: @font, monospace;
-  font-weight: lighter;
-  color: @darkblue;
+.theme-one-light-ui {
+  .status-bar,
+  .tab-bar,
+  .tree-view {
+    // background-color: @lightgrey;
+    font-size: 0.85em;
+    font-family: @font, monospace;
+    font-weight: lighter;
+    color: @darkblue;
+  }
 }
 
 .file.entry.list-item.status-modified > span.icon-file-text {
@@ -66,15 +70,6 @@ atom-text-editor {
   color: @darkgrey;
   font-family: @font, monospace;
   font-weight: lighter;
-}
-
-.theme-one-light-ui {
-  .status-bar,
-  .tab-bar,
-  .tree-view { 
-    font-size: 12px;
-    font-family: @font;
-  }
 }
 
 .editor .selection .region {
