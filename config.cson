@@ -10,6 +10,7 @@
       "linter-haml"
       "emmet"
       "whitespace"
+      "minimap"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -18,6 +19,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
+    fontSize: 15
     invisibles: {}
     showInvisibles: true
     softWrap: true
