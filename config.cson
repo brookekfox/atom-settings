@@ -11,6 +11,7 @@
       "emmet"
       "whitespace"
       "minimap"
+      "goto-definition"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -28,8 +29,7 @@
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-haml": {}
   minimap: {}
   react: {}
