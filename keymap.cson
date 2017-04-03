@@ -1,3 +1,9 @@
+'atom-text-editor:not([mini])':
+  'cmd-shift-L': 'editor:delete-line'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'shift-alt-K': 'editor:split-selections-into-lines'
+
 # Your keymap
 #
 # Atom keymaps work similarly to style sheets. Just as style sheets use
