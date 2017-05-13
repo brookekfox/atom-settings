@@ -9,3 +9,18 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+atom.workspace.observeTextEditors (editor) ->
+    if editor.getTitle() isnt 'untitled'
+        sp = editor.getPath().split('/')
+        if 'js' in sp
+          title = sp.slice(sp.indexOf('js')+1).join('/') # gives name of containing folder along with filename
+        else
+          dirs = sp.filter (s) -> /_com|_cn/.test(s)
+          title = sp.slice(sp.indexOf(dirs[0])).join('/') # gives name of containing folder along with filename
+        editor.getTitle = -> title
+        editor.getLongTitle = -> title
+
+for item in atom.workspace.getPaneItems()
+    if item.emitter?
+        item.emitter.emit 'did-change-title', item.getTitle()

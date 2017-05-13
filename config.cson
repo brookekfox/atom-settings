@@ -33,6 +33,8 @@
   "linter-haml": {}
   minimap: {}
   react: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".java.source":
