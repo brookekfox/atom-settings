@@ -12,6 +12,8 @@
       "whitespace"
       "minimap"
       "goto-definition"
+      "tree-view-git-modified"
+      "json-lint-provider"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -31,6 +33,8 @@
     userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
   linter: {}
   "linter-haml": {}
+  "linter-ui-default":
+    panelHeight: 263.3125
   minimap: {}
   react: {}
   "tree-view":

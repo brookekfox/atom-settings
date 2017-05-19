@@ -73,8 +73,19 @@ atom-text-editor {
   font-size: 1.075em;
 }
 
-li.texteditor .title {
-  font-size: 7pt;
+li.texteditor .title { font-size: 7pt; }
+.tab-bar .tab .title.title:before { margin-right: 0.3em; }
+.tab-bar { height: 3.5em; }
+.tab-bar .tab .title, .tab-bar .tab.active .title { padding: 5px; }
+.tab-bar .tab .close-icon, .tab-bar .tab.modified:not(:hover) .close-icon { top: 1em; }
+
+.select-list ol.list-group.mark-active li.active:before, .select-list ol.list-group.mark-active li.active:before { color: @green; }
+.list-group li:not(.list-nested-item), .list-group li:not(.list-nested-item).selected { color: @darkblue; }
+.select-list ol.list-group li.two-lines .secondary-line, .select-list ol.list-group li.two-lines.selected .secondary-line { color: @lightgreen; }
+
+.tab-bar .tab .close-icon:hover,
+.tooltip .tooltip-inner {
+  background-color: @darkmagenta;
 }
 
 .editor .selection .region {

@@ -24,3 +24,8 @@ atom.workspace.observeTextEditors (editor) ->
 for item in atom.workspace.getPaneItems()
     if item.emitter?
         item.emitter.emit 'did-change-title', item.getTitle()
+
+dirs = atom.project.rootDirectories[0].path.split('/')
+parentRepo = dirs[dirs.length - 2]
+leftPanelTitle = atom.workspace.getLeftDock().innerElement.children[0].children[0].children[1].children[0].children[0].children[0].children[0]
+leftPanelTitle.innerHTML = parentRepo
