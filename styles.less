@@ -116,7 +116,7 @@ atom-text-editor .gutter .line-number.git-line-modified {
 // }
 
 .editor .invisible-character {
-  color: darken(@lightgrey, 7%);
+  color: darken(@lightgrey, 5%);
 }
 
 
@@ -179,14 +179,19 @@ atom-text-editor.editor .syntax--punctuation {
 }
 
 .syntax--entity.syntax--name.syntax--tag {
+// .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html,
+// .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html {
   // color: mediumblue;
   // color: @lightpink;
   color: @darkmagenta;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
+// .syntax--string.syntax--quoted.syntax--double.syntax--html {
+//   color: mediumblue!important;
+// }
+
 .syntax--constant, .syntax--support.syntax--class {
-  // color: @orange;
   color: @darkmagenta;
   // font-weight: bold;
   // font-style: italic;
@@ -249,28 +254,17 @@ atom-text-editor.editor .syntax--punctuation {
   // font-weight: bold;
 }
 
-.entity.name.function.js {
-  color: @blue;
+.syntax--constant.syntax--language.syntax--boolean.syntax--js,
+.syntax--constant.syntax--language.syntax--null.syntax--js,
+.syntax--constant.syntax--numeric.syntax--js {
+  color: @orange;
+  // font-weight: bold;
 }
 
-// .app(@inner) when (@inner = "app") {
-//   font-weight: bold;
-// }
-
-// .syntax--variable.syntax--other.syntax--object.syntax--js {
-//   // font-weight: bold
-//   // .app(this.innerHTML);
-// }
-
-// .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
-//   color: @orange;
-//   // font-style: italic;
-//   font-weight: lighter;
-// }
-
-// .syntax--support.syntax--class.syntax--js {
-//   color: rgb(227, 126, 65);
-// }
+.syntax--entity.syntax--name.syntax--function.syntax--js {
+  color: @blue;
+  font-weight: bolder;
+}
 
 
 
@@ -350,10 +344,27 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
   font-style: inherit!important;
 }
 
+.syntax--constant.syntax--numeric.syntax--css,
+.syntax--keyword.syntax--other.syntax--unit.syntax--css {
+  color: #383a42;
+}
+
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
   color: @green;
+  font-weight: bold;
 }
 
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-class.syntax--css {
   color: @teal;
+  font-weight: bold;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css {
+  color: @darkmagenta;
+  font-weight: bold;
+}
+
+.syntax--support.syntax--type.syntax--property-name.syntax--css {
+  color: @darkteal;
+  font-weight: bold;
 }

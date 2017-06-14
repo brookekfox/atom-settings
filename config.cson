@@ -37,8 +37,7 @@
     panelHeight: 263.3125
   minimap: {}
   react: {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".java.source":
