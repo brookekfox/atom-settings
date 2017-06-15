@@ -14,6 +14,7 @@
       "goto-definition"
       "tree-view-git-modified"
       "json-lint-provider"
+      "flex-tool-bar"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -34,9 +35,15 @@
   linter: {}
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 263.3125
+    panelHeight: 257
   minimap: {}
   react: {}
+  "tool-bar":
+    iconSize: "16px"
+    position: "Right"
+  "tool-bar-almighty":
+    custom: "/custom_entries.json"
+    override: true
   "tree-view": {}
   welcome:
     showOnStartup: false

@@ -1,9 +1,12 @@
 // ----------------------------------------------- VARIABLES
 @font:        "Source Code Pro";
+// @sans-serif:  "Avenir Next";
+@sans-serif:  "Inconsolata";
 @yellow:      lemonchiffon;
 @pink:        deeppink;
 @lightpink:   orchid;
 @darkmagenta: mediumvioletred;
+@darkpink:    rgb(214, 21, 212);
 @green:       forestgreen;
 @lightgreen:  rgb(56, 181, 31);
 @brightgreen: rgb(66, 237, 45);
@@ -26,9 +29,9 @@
   .status-bar,
   .tab-bar,
   .tree-view {
-    // background-color: @lightgrey;
-    font-size: 0.85em;
-    font-family: @font, monospace;
+    background-color: @lightgrey;
+    font-size: 9pt;
+    font-family: @sans-serif, monospace;
     font-weight: lighter;
     color: @darkblue;
   }
@@ -57,7 +60,7 @@
 }
 
 .tab.sortable.active > div.title {
-  font-weight: bold;
+  font-weight: bolder;
   color: @darkblue;
   border-bottom: 2.5px solid @green;
 }
@@ -70,7 +73,7 @@ atom-text-editor {
   color: @darkgrey;
   font-family: @font, monospace;
   font-weight: lighter;
-  font-size: 1.075em;
+  font-size: 10pt;
 }
 
 li.texteditor .title { font-size: 7pt; }
@@ -95,7 +98,6 @@ li.texteditor .title { font-size: 7pt; }
 atom-text-editor::shadow .cursor {
  border-color: @pink;
  border-left-width: medium;
- // border-color: @darkblue;
 }
 
 atom-text-editor::shadow .highlight.find-result .region {
@@ -130,10 +132,6 @@ atom-text-editor .gutter .line-number.git-line-modified {
   color: @darkmagenta!important;
 }
 
-// .syntax--angular > .syntax--variable.syntax--js {
-//   color: @darkmagenta!important;
-// }
-
 .syntax--attribute-name.syntax--html.syntax--angular,
 .syntax--entity.syntax--other.syntax--attribute-name {
   font-weight: bolder;
@@ -159,13 +157,13 @@ atom-text-editor.editor .syntax--punctuation {
   font-weight: bolder;
 }
 
-.syntax--constant .syntax--string {
+.syntax--constant.syntax--string {
   color: @purple-blue!important;
   font-weight: bold!important;
 }
 
 .syntax--storage {
-  color: rgb(214, 21, 212);
+  color: @darkpink;
   font-weight: bold;
 }
 

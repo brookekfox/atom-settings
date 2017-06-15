@@ -1,0 +1,91 @@
+[
+  {
+    "type": "button",
+    "tooltip": "Git Control",
+    "dependency": "git-control",
+    "callback": "git-control:toggle",
+    "icon": "bullseye",
+    "iconset": "fa"
+  },
+  {
+    "type": "button",
+    "tooltip": "Git Projects",
+    "dependency": "git-projects",
+    "callback": "git-projects:toggle",
+    "icon": "git",
+    "iconset": "fa"
+  },
+  {
+    "type": "button",
+    "tooltip": "Merge Conflicts",
+    "dependency": "merge-conflicts",
+    "callback": "merge-conflicts:detect",
+    "icon": "code-fork",
+    "iconset": "fa"
+  },
+  {
+    "type": "button",
+    "icon": "circuit-board",
+    "tooltip": "Git Diff",
+    "callback": "git-diff:toggle-diff-list"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "button",
+    "icon": "document",
+    "callback": "application:new-file",
+    "tooltip": "New File",
+    "iconset": "ion",
+    "mode": "dev"
+  },
+  {
+    "type": "button",
+    "tooltip": "Split Screen Horizontally",
+    "icon": "format-horizontal-align-center",
+    "iconset": "mdi",
+    "callback": "pane:split-right"
+  },
+  {
+    "type": "button",
+    "tooltip": "Split Screen Vertically",
+    "icon": "format-vertical-align-center",
+    "iconset": "mdi",
+    "callback": "pane:split-down"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "button",
+    "tooltip": "Toggle Sidebar",
+    "icon": "sitemap",
+    "iconset": "fa",
+    "callback": "tree-view:toggle"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "button",
+    "icon": "refresh",
+    "iconset": "ion",
+    "callback": "window:reload",
+    "tooltip": "Reload Window"
+  },
+  {
+    "type": "button",
+    "icon": "bug",
+    "callback": "window:toggle-dev-tools",
+    "tooltip": "Toggle Developer Tools"
+  },
+  {
+    "type": "button",
+    "icon": "gear-a",
+    "iconset": "ion",
+    "tooltip": "Open Settings View",
+    "callback": "settings-view:open",
+    "tooltip": "Settings"
+  }
+]
