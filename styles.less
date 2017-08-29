@@ -1,38 +1,40 @@
 // ----------------------------------------------- VARIABLES
-@font:        "Source Code Pro";
-// @sans-serif:  "Avenir Next";
-@sans-serif:  "Inconsolata";
-@yellow:      lemonchiffon;
-@pink:        deeppink;
-@lightpink:   orchid;
-@darkmagenta: mediumvioletred;
-@darkpink:    rgb(214, 21, 212);
-@green:       forestgreen;
-@lightgreen:  rgb(56, 181, 31);
-@brightgreen: rgb(66, 237, 45);
-@darkblue:    darkblue;
-@blue:        rgb(0, 26, 255);
-@lightblue:   rgb(32, 161, 255);
-@purple-blue: slateblue;
-@purple:      #6a0be3;
-@teal:        rgb(30, 178, 182);
-@darkteal:    darken(#0184bc, 10%);
-@turq:        #12d0d0;
-@orange:      darken(darkorange, 6%);
-@darkgrey:    darken(darkgrey, 25%);
-@lightgrey:   #f0f0f0;
+@font:               "Source Code Pro";
+@sans-serif:         "Inconsolata";
+@yellow:             lemonchiffon;
+@pink:               deeppink;
+@lightpink:          orchid;
+@darkmagenta:        mediumvioletred;
+@darkpink:           rgb(214, 21, 212);
+@green:              forestgreen;
+@lightgreen:         rgb(56, 181, 31);
+@brightgreen:        rgb(66, 237, 45);
+@tealgreen:          rgb(0, 199, 127);
+@darkblue:           darkblue;
+@blue:               rgb(0, 26, 255);
+@lightblue:          rgb(32, 161, 255);
+@indigo:             indigo;
+@purple-blue:        slateblue;
+@purple:             #6a0be3;
+@teal:               rgb(30, 178, 182);
+@darkteal:           darken(#0184bc, 10%);
+@turq:               #12d0d0;
+@orange:             darken(darkorange, 7%);
+@darkgrey:           darken(darkgrey, 25%);
+@lightgrey:          #f0f0f0;
+@treeview-font-size: 8pt;
+@editor-font-size:   11pt;
+@tabs-font-size:     6pt;
 
 
 
 // ----------------------------------------------- TREE VIEW
 .theme-one-light-ui {
-  .status-bar,
-  .tab-bar,
-  .tree-view {
+  .status-bar, .tab-bar, .tree-view {
     background-color: @lightgrey;
-    font-size: 9pt;
-    font-family: @sans-serif, monospace;
-    font-weight: lighter;
+    font-size: @treeview-font-size;
+    font-family: @font, monospace;
+    font-weight: 300;
     color: @darkblue;
   }
 }
@@ -62,7 +64,14 @@
 .tab.sortable.active > div.title {
   font-weight: bolder;
   color: @darkblue;
-  border-bottom: 2.5px solid @green;
+  border-bottom: 2px solid @green;
+}
+
+atom-pane > .list-inline.tab-bar.inset-panel > li.tab.sortable.active > div.title > p {
+  font-size: 6pt;
+  line-height: 6px;
+  margin-top: -6px;
+  color: @lightblue;
 }
 
 
@@ -73,10 +82,10 @@ atom-text-editor {
   color: @darkgrey;
   font-family: @font, monospace;
   font-weight: lighter;
-  font-size: 10pt;
+  font-size: @editor-font-size;
 }
 
-li.texteditor .title { font-size: 7pt; }
+li.texteditor .title { font-size: @tabs-font-size; }
 .tab-bar .tab .title.title:before { margin-right: 0.3em; }
 .tab-bar { height: 3.5em; }
 .tab-bar .tab .title, .tab-bar .tab.active .title { padding: 5px; }
@@ -101,7 +110,7 @@ atom-text-editor::shadow .cursor {
 }
 
 atom-text-editor::shadow .highlight.find-result .region {
-  border: 1px dotted indigo;
+  border: 1px dotted @indigo;
   background-color: inherit;
 }
 
@@ -123,36 +132,17 @@ atom-text-editor .gutter .line-number.git-line-modified {
 
 
 
-// ----------------------------------------------- ANGULAR
-.punctuation.definition.block.begin.angular,
-.punctuation.definition.block.end.angular,
-.syntax--punctuation.syntax--definition.syntax--block.syntax--begin.syntax--angular,
-.syntax--punctuation.syntax--definition.syntax--block.syntax--end.syntax--angular {
-  font-weight: bold!important;
-  color: @darkmagenta!important;
-}
-
-.syntax--attribute-name.syntax--html.syntax--angular,
-.syntax--entity.syntax--other.syntax--attribute-name {
-  font-weight: bolder;
-  color: @purple-blue;
-}
-
-
-
 // ----------------------------------------------- GENERAL
 .syntax--keyword.syntax--control {
   font-weight: bolder;
 }
 
-.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--js,
 .syntax--string {
-  // color: @lightblue!important;
   color: @lightgreen!important;
-  font-weight: normal!important;
+  font-weight: lighter!important;
 }
 
-atom-text-editor.editor .syntax--punctuation {
+.syntax--punctuation {
   color: @darkblue;
   font-weight: bolder;
 }
@@ -177,43 +167,27 @@ atom-text-editor.editor .syntax--punctuation {
 }
 
 .syntax--entity.syntax--name.syntax--tag {
-// .syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html,
-// .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html {
-  // color: mediumblue;
-  // color: @lightpink;
   color: @darkmagenta;
   font-weight: bold;
 }
 
-// .syntax--string.syntax--quoted.syntax--double.syntax--html {
-//   color: mediumblue!important;
-// }
-
 .syntax--constant, .syntax--support.syntax--class {
   color: @darkmagenta;
-  // font-weight: bold;
-  // font-style: italic;
 }
 
 .syntax--support.syntax--class {
   font-weight: bold;
 }
 
-.syntax--function.syntax--parameters, .syntax--variable.syntax--parameter {
+.syntax--function.syntax--parameters,
+.syntax--variable.syntax--parameter {
   color: @orange;
   font-weight: lighter;
 }
 
-.punctuation.separator.key-value {
-  color: @orange;
-}
-
-.keyword.control.def.es {
-  font-style: italic;
-}
-
 .syntax--operator.syntax--arithmetic {
-  color: @darkmagenta!important;
+  color: @darkpink!important;
+  font-weight: bold;
 }
 
 .syntax--delimiter {
@@ -221,47 +195,77 @@ atom-text-editor.editor .syntax--punctuation {
   font-weight: bold;
 }
 
+.syntax--constant.syntax--language.syntax--boolean {
+  color: @orange;
+}
+
+
+
+// ----------------------------------------------------- HTML
+.syntax--punctuation.syntax--tag.syntax--html,
+.syntax--punctuation.syntax--tag.syntax--html {
+  color: @darkteal;
+}
+
+.syntax--attribute-name.syntax--html {
+  font-weight: bolder!important;
+}
+
+.syntax--string.syntax--quoted.syntax--double.syntax--html {
+  font-weight: lighter!important;
+}
+
+.syntax--attribute-name.syntax--html,
+.syntax--attribute-name.syntax--html.syntax--angular,
+.syntax--entity.syntax--other.syntax--attribute-name,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--html {
+  font-weight: bolder;
+  color: @purple-blue;
+}
+
 
 
 // ----------------------------------------------- JAVASCRIPT
-.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+.syntax--source.syntax--js.syntax--keyword.syntax--operator {
   font-weight: bolder;
   color: @darkteal;
 }
 
-.function.js {
-  color: @turq;
-  font-style: italic;
-}
-
-.parameter.function.js {
-  color: @orange;
-}
-
-.support.constant.js {
-  color: rgb(251, 166, 65);
-  // font-weight: bolder;
-}
-
-.variable.other.js {
-  color: @purple;
-  font-style: italic;
-}
-.storage.type.js {
-  color: #00d2ad;
-  // font-weight: bold;
+.syntax--meta.syntax--delimiter.syntax--method.syntax--period.syntax--js,
+.syntax--meta.syntax--delimiter.syntax--object.syntax--comma.syntax--js,
+.syntax--punctuation.syntax--separator.syntax--key-value.syntax--js,
+.syntax--keyword.syntax--operator.syntax--relational.syntax--js,
+.syntax--punctuation.syntax--terminator.syntax--statement.syntax--js,
+.syntax--operator.syntax--assignment.syntax--js {
+  color: @darkteal!important;
+  font-weight: bold;
 }
 
 .syntax--constant.syntax--language.syntax--boolean.syntax--js,
 .syntax--constant.syntax--language.syntax--null.syntax--js,
 .syntax--constant.syntax--numeric.syntax--js {
   color: @orange;
-  // font-weight: bold;
+}
+
+.syntax--string.syntax--unquoted.syntax--js-label.syntax--js {
+  color: @darkpink!important;
+  font-weight: bolder!important;
 }
 
 .syntax--entity.syntax--name.syntax--function.syntax--js {
   color: @blue;
   font-weight: bolder;
+}
+
+
+
+// ----------------------------------------------- ANGULAR
+.punctuation.definition.block.begin.angular,
+.punctuation.definition.block.end.angular,
+.syntax--punctuation.syntax--definition.syntax--block.syntax--begin.syntax--angular,
+.syntax--punctuation.syntax--definition.syntax--block.syntax--end.syntax--angular {
+  font-weight: bold!important;
+  color: @darkmagenta!important;
 }
 
 
@@ -289,25 +293,20 @@ atom-text-editor.editor .syntax--punctuation {
 .support.function.rails {
   font-style: italic;
   font-weight:bold;
-  color: rgb(0, 199, 127);
+  color: @tealgreen;
 }
 
 .variable.instance.ruby, .punctuation.definition.variable.ruby {
-  color: @pink;
+  color: @darkpink;
 }
 
 .constant.numeric.ruby {
-  // font-weight: bold;
   color: @blue;
 }
 
 .string.quoted.single.ruby, .string.quoted.double.interpolated.ruby {
   color: @lightgreen;
 }
-
-// .block.ruby {
-//   color: #04db7c;
-// }
 
 
 
@@ -325,7 +324,7 @@ atom-text-editor.editor .syntax--punctuation {
 
 
 // ----------------------------------------------- JSON
-atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.syntax--json:not(.syntax--value) > .syntax--string.syntax--quoted.syntax--double.syntax--json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json:not(.syntax--value) > .syntax--string.syntax--quoted.syntax--double.syntax--json {
   color: @purple;
   font-style: italic;
 }
@@ -365,4 +364,8 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .syntax--support.syntax--type.syntax--property-name.syntax--css {
   color: @darkteal;
   font-weight: bold;
+}
+
+.syntax--variable.syntax--other.syntax--less {
+  font-weight: bolder;
 }

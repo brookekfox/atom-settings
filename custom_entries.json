@@ -1,18 +1,10 @@
 [
   {
     "type": "button",
-    "tooltip": "Git Control",
-    "dependency": "git-control",
-    "callback": "git-control:toggle",
-    "icon": "bullseye",
-    "iconset": "fa"
-  },
-  {
-    "type": "button",
-    "tooltip": "Git Projects",
-    "dependency": "git-projects",
-    "callback": "git-projects:toggle",
-    "icon": "git",
+    "tooltip": "Toggle Git Tab",
+    "dependency": "github",
+    "callback": "github:toggle-git-tab",
+    "icon": "github",
     "iconset": "fa"
   },
   {
@@ -34,11 +26,18 @@
   },
   {
     "type": "button",
-    "icon": "document",
+    "icon": "file-code-o",
     "callback": "application:new-file",
     "tooltip": "New File",
-    "iconset": "ion",
+    "iconset": "fa",
     "mode": "dev"
+  },
+  {
+    "type": "button",
+    "icon": "paint-brush",
+    "callback": "color-picker:open",
+    "tooltip": "Color Picker",
+    "iconset": "fa"
   },
   {
     "type": "button",
@@ -53,6 +52,13 @@
     "icon": "format-vertical-align-center",
     "iconset": "mdi",
     "callback": "pane:split-down"
+  },
+  {
+    "type": "button",
+    "tooltip": "Close Other Tabs",
+    "icon": "close",
+    "iconset": "fa",
+    "callback": "tabs:close-other-tabs"
   },
   {
     "type": "spacer"
@@ -76,16 +82,44 @@
   },
   {
     "type": "button",
-    "icon": "bug",
+    "icon": "edit",
+    "iconset": "fa",
     "callback": "window:toggle-dev-tools",
     "tooltip": "Toggle Developer Tools"
+  },
+  {
+    "type": "button",
+    "icon": "tree",
+    "iconset": "fa",
+    "callback": "application:open-your-stylesheet",
+    "tooltip": "Open Stylesheet"
+  },
+  {
+    "type": "button",
+    "icon": "truck",
+    "iconset": "fa",
+    "callback": "application:open-your-config",
+    "tooltip": "Open Config"
+  },
+  {
+    "type": "button",
+    "icon": "coffee",
+    "iconset": "fa",
+    "callback": "application:open-your-init-script",
+    "tooltip": "Open Init Script"
+  },
+  {
+    "type": "button",
+    "icon": "keyboard-o",
+    "iconset": "fa",
+    "callback": "application:open-your-keymap",
+    "tooltip": "Open Keymap"
   },
   {
     "type": "button",
     "icon": "gear-a",
     "iconset": "ion",
     "tooltip": "Open Settings View",
-    "callback": "settings-view:open",
-    "tooltip": "Settings"
+    "callback": "settings-view:open"
   }
 ]

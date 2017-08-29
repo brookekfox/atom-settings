@@ -3,9 +3,12 @@
   "atom-beautify":
     general:
       _analyticsUserId: "593fe7f6-d159-4101-9898-9b52b61c806f"
+  "atom-package-deps":
+    ignored: []
   autosave:
     enabled: true
   core:
+    destroyEmptyPanes: false
     disabledPackages: [
       "linter-haml"
       "emmet"
@@ -23,7 +26,7 @@
     ]
   editor:
     fontFamily: "Source Code Pro"
-    fontSize: 15
+    fontSize: 12
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -35,7 +38,7 @@
   linter: {}
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 257
+    panelHeight: 57
   minimap: {}
   react: {}
   "tool-bar":
