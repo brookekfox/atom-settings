@@ -142,6 +142,10 @@ atom-text-editor .gutter .line-number.git-line-modified {
   font-weight: lighter!important;
 }
 
+.syntax--bracket, .syntax--brace {
+  color: @darkblue!important;
+}
+
 .syntax--punctuation {
   color: @darkblue;
   font-weight: bolder;
@@ -227,6 +231,13 @@ atom-text-editor .gutter .line-number.git-line-modified {
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--html {
   font-weight: bolder;
   color: @purple-blue;
+}
+
+.syntax--punctuation.syntax--definition.syntax--entity.syntax--begin.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--entity.syntax--end.syntax--html,
+.syntax--entity.syntax--entity {
+  font-weight: 500;
+  color: @lightblue;
 }
 
 
