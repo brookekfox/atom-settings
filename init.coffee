@@ -27,17 +27,17 @@ for item in atom.workspace.getPaneItems()
 
 directoryPath = atom.project.rootDirectories[0].path
 dirs = directoryPath.split('/')
-if /schools_experience|teaching_path_creator/.test(directoryPath) 
+if /schools_experience|schools_experience_jp|ems_enterprise|teaching_path_creator/.test(directoryPath) 
   parentRepo = dirs[dirs.length - 2]
   submodule = dirs[dirs.length - 1]
-else if /[\.]com|cn/.test(directoryPath)
+else if /sites|sites_jp|[\.]com|cn/.test(directoryPath)
   parentRepo = dirs[dirs.length - 1]
 leftPanelTitle = document.getElementsByClassName('title')[0]
 # leftPanelTitle = atom.workspace.getLeftDock().innerElement.children[0].children[0].children[1].children[0].children[0].children[0].children[0]
 if submodule?
   leftPanelTitle.innerHTML = parentRepo
-  submoduleHTMLTag = document.createElement('p')
-  submoduleHTMLTag.appendChild(document.createTextNode(submodule))
+  submoduleHTMLTag = document.createElement('span')
+  submoduleHTMLTag.appendChild(document.createTextNode(' > ' + submodule))
   leftPanelTitle.appendChild(submoduleHTMLTag)
 else
   leftPanelTitle.innerHTML = parentRepo

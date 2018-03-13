@@ -27,6 +27,7 @@
       "FontSearch"
       "linter-eslint"
       "language-gfm"
+      "atom-autocomplete-php"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -47,7 +48,7 @@
   linter: {}
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 128
+    panelHeight: 57
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
