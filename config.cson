@@ -35,6 +35,7 @@
       "one-light-syntax"
     ]
   editor:
+    autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
     fontSize: 12
     invisibles: {}
@@ -48,7 +49,7 @@
   linter: {}
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 57
+    panelHeight: 128
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
