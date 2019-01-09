@@ -25,9 +25,9 @@
       "ide-typescript"
       "linter-jshint"
       "FontSearch"
-      "linter-eslint"
       "language-gfm"
       "atom-autocomplete-php"
+      "linter-json-lint"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -37,7 +37,6 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
-    fontSize: 12
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -47,9 +46,15 @@
   "exception-reporting":
     userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
   linter: {}
+  "linter-eslint":
+    disabling:
+      rulesToSilenceWhileTyping: [
+        "no-console"
+        "no-todo-statements"
+      ]
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 128
+    panelHeight: 57
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
@@ -67,7 +72,8 @@
   "tool-bar-almighty":
     custom: "/custom_entries.json"
     override: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     startInInsertMode: true
   welcome:

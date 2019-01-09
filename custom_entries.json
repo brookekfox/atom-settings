@@ -4,33 +4,7 @@
     "tooltip": "Toggle Git Tab",
     "dependency": "github",
     "callback": "github:toggle-git-tab",
-    "icon": "github",
-    "iconset": "fa"
-  },
-  {
-    "type": "button",
-    "tooltip": "Merge Conflicts",
-    "dependency": "merge-conflicts",
-    "callback": "merge-conflicts:detect",
-    "icon": "code-fork",
-    "iconset": "fa"
-  },
-  {
-    "type": "button",
-    "icon": "circuit-board",
-    "tooltip": "Git Diff",
-    "callback": "git-diff:toggle-diff-list"
-  },
-  {
-    "type": "spacer"
-  },
-  {
-    "type": "button",
-    "icon": "file-code-o",
-    "callback": "application:new-file",
-    "tooltip": "New File",
-    "iconset": "fa",
-    "mode": "dev"
+    "icon": "circuit-board"
   },
   {
     "type": "button",
@@ -57,21 +31,8 @@
     "type": "button",
     "tooltip": "Close Other Tabs",
     "icon": "close",
-    "iconset": "fa",
+    "iconset": "mdi",
     "callback": "tabs:close-other-tabs"
-  },
-  {
-    "type": "spacer"
-  },
-  {
-    "type": "button",
-    "tooltip": "Toggle Sidebar",
-    "icon": "sitemap",
-    "iconset": "fa",
-    "callback": "tree-view:toggle"
-  },
-  {
-    "type": "spacer"
   },
   {
     "type": "button",
@@ -110,8 +71,8 @@
   },
   {
     "type": "button",
-    "icon": "keyboard-o",
-    "iconset": "fa",
+    "icon": "keyboard-outline",
+    "iconset": "mdi",
     "callback": "application:open-your-keymap",
     "tooltip": "Open Keymap"
   },

@@ -65,6 +65,11 @@
   border-bottom: 2.5px solid @green;
 }
 
+atom-text-editor .gutter, :host .gutter {
+  background-color: #f0f0f0!important;
+  color: @darkblue!important;
+}
+
 
 
 // ---------------------------------------------------------------------- EDITOR
@@ -95,6 +100,12 @@ li.texteditor .title { font-size: 7pt; }
   background-color: @yellow;
 }
 
+atom-text-editor::shadow {
+  .selection .region {
+    background-color: @yellow!important;
+  }
+}
+
 atom-text-editor::shadow .cursor {
  border-color: @pink;
  border-left-width: medium;
@@ -120,6 +131,7 @@ atom-text-editor .gutter .line-number.git-line-modified {
 .editor .invisible-character {
   color: darken(@lightgrey, 5%);
 }
+
 
 
 
