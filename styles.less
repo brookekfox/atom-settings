@@ -1,6 +1,7 @@
 // ------------------------------------------------------------------- VARIABLES
 @font:        "Source Code Pro";
 @sans-serif:  "Inconsolata";
+@serif:       "Menlo";
 @yellow:      lemonchiffon;
 @pink:        deeppink;
 @lightpink:   orchid;
@@ -449,4 +450,48 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .syntax--constant.syntax--numeric.syntax--sql {
   color: @darkmagenta;
   font-weight: bold;
+}
+
+
+
+// -------------------------------------------------------------------- MARKDOWN
+.markdown-body {
+  h1, h2, h3, h4, h5, h6 {
+    color: @darkblue;
+    font-family: @font, monospace;
+  }
+  * {
+    font-family: @sans-serif;
+  }
+}
+
+.markdown-preview:not([data-use-github-style]) {
+  font-family: @serif;
+  font-size: 10px;
+}
+
+.markdown-preview:not([data-use-github-style]) atom-text-editor {
+  border-radius: 10px;
+  font-family: @font, monospace;
+}
+
+.markdown-preview:not([data-use-github-style]) code {
+  border-radius: 3px;
+  color: @darkblue;
+  font-family: @font, monospace;
+}
+
+.markdown-preview:not([data-use-github-style]) h1,
+.markdown-preview:not([data-use-github-style]) h2,
+.markdown-preview:not([data-use-github-style]) h3,
+.markdown-preview:not([data-use-github-style]) h4,
+.markdown-preview:not([data-use-github-style]) h5 {
+// .markdown-preview:not([data-use-github-style]) h6 {
+  color: @darkblue;
+  font-weight: bold;
+}
+
+.markdown-preview:not([data-use-github-style]) h6 {
+  font-style: italic;
+  color: @purple;
 }
