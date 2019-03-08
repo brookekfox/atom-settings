@@ -79,6 +79,10 @@
     startInInsertMode: true
   welcome:
     showOnStartup: false
+".html.php.text":
+  editor:
+    showIndentGuide: false
+    tabLength: 4
 ".java.source":
   editor:
     showIndentGuide: false
