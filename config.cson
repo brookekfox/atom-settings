@@ -3,6 +3,9 @@
   "atom-beautify":
     general:
       _analyticsUserId: "593fe7f6-d159-4101-9898-9b52b61c806f"
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   "atom-package-deps":
     ignored: []
   autosave:
@@ -16,18 +19,19 @@
       "emmet"
       "whitespace"
       "minimap"
-      "goto-definition"
-      "tree-view-git-modified"
       "json-lint-provider"
       "flex-tool-bar"
       "vim-mode-plus"
-      "atom-ide-ui"
       "ide-typescript"
       "linter-jshint"
       "FontSearch"
       "language-gfm"
       "atom-autocomplete-php"
       "linter-json-lint"
+      "linter"
+      "git-control"
+      "git-projects"
+      "open-on-github"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -46,6 +50,8 @@
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
+  github:
+    showDiffIconGutter: true
   linter: {}
   "linter-eslint":
     disabling:

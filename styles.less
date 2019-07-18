@@ -454,14 +454,53 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 
 
 
+// ------------------------------------------------------------------------- PHP
+.syntax--entity.syntax--name.syntax--function.syntax--php {
+  font-weight: bold;
+  color: @darkmagenta;
+}
+
+.syntax--constant.syntax--language.syntax--php {
+  font-weight: bold;
+  color: @orange;
+}
+
+.syntax--storage.syntax--modifier.syntax--php,
+.syntax--storage.syntax--type.syntax--function.syntax--php {
+  color: @orange;
+}
+
+.syntax--variable.syntax--other.syntax--php {
+  color: @teal;
+}
+
+.syntax--support.syntax--function.syntax--construct.syntax--php,
+.syntax--support.syntax--function.syntax--array.syntax--php {
+  color: @darkmagenta;
+  font-weight: 400;
+}
+
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--php {
+  color: @darkblue;
+}
+
+
+
 // -------------------------------------------------------------------- MARKDOWN
 .markdown-body {
   h1, h2, h3, h4, h5, h6 {
-    color: @darkblue;
+    color: @darkmagenta;
     font-family: @font, monospace;
+    font-weight: bold;
   }
+  h1 { font-size: 18px; }
+  h2 { font-size: 16px; }
+  h3 { font-size: 14px; }
+  h4 { font-size: 12px; }
+  h5, h6 { font-size: 10px; }
   * {
     font-family: @sans-serif;
+    font-size: 8px;
   }
 }
 
@@ -486,9 +525,22 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .markdown-preview:not([data-use-github-style]) h3,
 .markdown-preview:not([data-use-github-style]) h4,
 .markdown-preview:not([data-use-github-style]) h5 {
-// .markdown-preview:not([data-use-github-style]) h6 {
-  color: @darkblue;
   font-weight: bold;
+}
+.markdown-preview:not([data-use-github-style]) h1 {
+  color: @darkmagenta;
+}
+.markdown-preview:not([data-use-github-style]) h2 {
+  color: @teal;
+}
+.markdown-preview:not([data-use-github-style]) h3 {
+  color: @orange;
+}
+.markdown-preview:not([data-use-github-style]) h4 {
+  color: @darkmagenta;
+}
+.markdown-preview:not([data-use-github-style]) h5 {
+  color: @teal;
 }
 
 .markdown-preview:not([data-use-github-style]) h6 {

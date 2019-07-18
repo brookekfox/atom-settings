@@ -24,6 +24,12 @@
   'error_log':
     'prefix': 'log'
     'body': 'error_log(__METHOD__ . " | " . __LINE__ . " LOG : " . print_r(${1}, 1));'
+  'author':
+    'prefix': 'brooke'
+    'body': 'Brooke Fox <brooke.fox@aofl.com>'
+  'var_dump':
+    'prefix': 'var'
+    'body': 'var_dump(${1});'
 '.source.js':
   'console.log':
     'prefix': 'log'
