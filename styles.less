@@ -61,9 +61,9 @@
 }
 
 .tab.sortable.active > div.title {
-  font-weight: bolder;
-  color: @darkblue;
-  border-bottom: 2.5px solid @green;
+  font-weight: 500;
+  color: @green;
+  border-bottom: 3px solid @green;
 }
 
 atom-text-editor .gutter, :host .gutter {
@@ -88,9 +88,15 @@ li.texteditor .title { font-size: 7pt; }
 .tab-bar .tab .title, .tab-bar .tab.active .title { padding: 5px; }
 .tab-bar .tab .close-icon, .tab-bar .tab.modified:not(:hover) .close-icon { top: 1em; }
 
-.select-list ol.list-group.mark-active li.active:before, .select-list ol.list-group.mark-active li.active:before { color: @green; }
-.list-group li:not(.list-nested-item), .list-group li:not(.list-nested-item).selected { color: @darkblue; }
-.select-list ol.list-group li.two-lines .secondary-line, .select-list ol.list-group li.two-lines.selected .secondary-line { color: @lightgreen; }
+.select-list ol.list-group.mark-active li.active:before, .select-list ol.list-group.mark-active li.active:before {
+  color: @green;
+}
+.list-group li:not(.list-nested-item), .list-group li:not(.list-nested-item).selected {
+  color: @darkblue;
+}
+.select-list ol.list-group li.two-lines .secondary-line, .select-list ol.list-group li.two-lines.selected .secondary-line {
+  color: @lightgreen;
+}
 
 .tab-bar .tab .close-icon:hover,
 .tooltip .tooltip-inner {
@@ -161,14 +167,13 @@ atom-text-editor .gutter .line-number.git-line-modified {
 
 .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--js,
 .syntax--string {
-  // color: @lightblue!important;
   color: @lightgreen!important;
   font-weight: normal!important;
 }
 
 atom-text-editor.editor .syntax--punctuation {
   color: @darkblue;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .syntax--constant.syntax--string {
@@ -455,7 +460,8 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 
 
 // ------------------------------------------------------------------------- PHP
-.syntax--entity.syntax--name.syntax--function.syntax--php {
+.syntax--entity.syntax--name.syntax--function.syntax--php,
+.syntax--constant.syntax--numeric.syntax--decimal.syntax--php {
   font-weight: bold;
   color: @darkmagenta;
 }
@@ -464,6 +470,12 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .syntax--constant.syntax--other.syntax--class.syntax--php {
   font-weight: bold;
   color: @orange;
+}
+
+.syntax--keyword.syntax--operator.syntax--comparison.syntax--php,
+.syntax--keyword.syntax--operator.syntax--logical.syntax--php {
+  font-weight: 500;
+  color: @blue;
 }
 
 .syntax--storage.syntax--modifier.syntax--php,
@@ -475,14 +487,32 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
   color: @teal;
 }
 
+.syntax--string.syntax--quoted.syntax--single.syntax--php,
+.syntax--string.syntax--quoted.syntax--double.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--php,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--php {
+  color: @green!important;
+}
+
 .syntax--support.syntax--function.syntax--construct.syntax--php,
 .syntax--support.syntax--function.syntax--array.syntax--php {
   color: @darkmagenta;
-  font-weight: 400;
+  font-weight: 600;
+}
+
+.syntax--punctuation.syntax--bracket.syntax--php,
+.syntax--punctuation.syntax--section.syntax--array.syntax--php {
+  font-weight: 500;
 }
 
 .syntax--punctuation.syntax--definition.syntax--variable.syntax--php {
+  font-weight: 600;
   color: @darkblue;
+}
+
+.syntax--variable.syntax--other.syntax--php {
+  font-weight: 400;
+  // color: @green;
 }
 
 

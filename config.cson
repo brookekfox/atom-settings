@@ -42,7 +42,6 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
-    fontSize: 11
     invisibles: {}
     showInvisibles: true
     softWrap: true
