@@ -3,6 +3,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "593fe7f6-d159-4101-9898-9b52b61c806f"
+    php: {}
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
@@ -41,7 +42,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
-    fontSize: 12
+    fontSize: 11
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -79,8 +80,7 @@
   "tool-bar-almighty":
     custom: "/custom_entries.json"
     override: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "vim-mode-plus":
     startInInsertMode: true
   welcome:

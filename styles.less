@@ -33,7 +33,7 @@
     background-color: @lightgrey;
     font-size: 8pt;
     font-family: @font, monospace;
-    font-weight: lighter;
+    // font-weight: lighter;
     color: @darkblue;
   }
 }
@@ -78,7 +78,7 @@ atom-text-editor {
   background-color: @lightgrey;
   color: @darkgrey;
   font-family: @font, monospace;
-  font-weight: 100;
+  font-weight: normal;
   // font-size: 10pt;
 }
 
@@ -460,7 +460,8 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
   color: @darkmagenta;
 }
 
-.syntax--constant.syntax--language.syntax--php {
+.syntax--constant.syntax--language.syntax--php,
+.syntax--constant.syntax--other.syntax--class.syntax--php {
   font-weight: bold;
   color: @orange;
 }
