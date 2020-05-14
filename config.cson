@@ -1,5 +1,8 @@
 "*":
   "SFTP-deployment": {}
+  _dart:
+    _firstRun: true
+    _version: "1.0.1"
   "atom-beautify":
     general:
       _analyticsUserId: "593fe7f6-d159-4101-9898-9b52b61c806f"
@@ -9,6 +12,8 @@
       formatOnSave: true
   "atom-package-deps":
     ignored: []
+  "autocomplete-plus":
+    autoActivationDelay: 500
   autosave:
     enabled: true
   core:
@@ -33,7 +38,9 @@
       "git-control"
       "git-projects"
       "open-on-github"
+      "dart"
     ]
+    followSymlinks: false
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
@@ -42,6 +49,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
+    fontSize: 12
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -52,6 +60,11 @@
     userId: "b3b1de43-0439-a3a4-29a1-1633875ee47f"
   github:
     showDiffIconGutter: true
+  "go-plus":
+    test:
+      coverageHighlightMode: "disabled"
+      runTestsWithShortFlag: false
+      runTestsWithVerboseFlag: true
   linter: {}
   "linter-eslint":
     disabling:
@@ -65,21 +78,31 @@
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
-  "markdown-preview": {}
+  "markdown-preview":
+    breakOnSingleNewline: true
   "markdown-themeable-pdf":
     codeHighlightingTheme: "brown-paper.css"
     enableXHTML: true
     format: "Letter"
     pageBorder: "0.4in"
   minimap: {}
+  "php-cs-fixer":
+    allowRisky: false
+    executablePath: "/usr/local/bin/php-cs-fixer"
+    executeOnSave: true
+    phpExecutablePath: "/usr/bin/php"
+    rules: "-psr0,@PSR2,binary_operator_spaces,blank_line_before_return,..."
+    showInfoNotifications: false
   react: {}
   "tool-bar":
     iconSize: "16px"
     position: "Right"
+    visible: true
   "tool-bar-almighty":
     custom: "/custom_entries.json"
     override: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     startInInsertMode: true
   welcome:

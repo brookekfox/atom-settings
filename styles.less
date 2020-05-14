@@ -62,8 +62,8 @@
 
 .tab.sortable.active > div.title {
   font-weight: 500;
-  color: @green;
-  border-bottom: 3px solid @green;
+  color: @darkmagenta;
+  border-bottom: 3px solid @darkmagenta;
 }
 
 atom-text-editor .gutter, :host .gutter {
@@ -480,7 +480,8 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 
 .syntax--storage.syntax--modifier.syntax--php,
 .syntax--storage.syntax--type.syntax--function.syntax--php {
-  color: @orange;
+  // color: @orange;
+  color: @green;
 }
 
 .syntax--variable.syntax--other.syntax--php {
@@ -513,6 +514,11 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .syntax--variable.syntax--other.syntax--php {
   font-weight: 400;
   // color: @green;
+}
+
+.syntax--constant.syntax--other.syntax--php {
+  font-weight: 500;
+  color: @darkblue;
 }
 
 

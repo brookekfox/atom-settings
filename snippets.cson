@@ -22,8 +22,20 @@
 
 '.text.html.php':
   'error_log':
+    'prefix': 'print'
+    'body': 'error_log(__METHOD__ . " | " . __LINE__ . " LOG : " . print_r(${1}, 1));'
+  'error_log2':
     'prefix': 'log'
     'body': 'error_log(__METHOD__ . " | " . __LINE__ . " LOG : " . print_r(${1}, 1));'
+  'ip_us':
+    'prefix': 'ip_us'
+    'body': '$client_ip = "198.7.59.119"; // US'
+  'ip_gb':
+    'prefix': 'ip_gb'
+    'body': '$client_ip = "185.86.151.11"; // ENGLAND'
+  'ip_ca':
+    'prefix': 'ip_ca'
+    'body': '$client_ip = "204.101.161.58"; // CANADA'
   'author':
     'prefix': 'brooke'
     'body': 'Brooke Fox <brooke.fox@aofl.com>'
@@ -33,4 +45,4 @@
 '.source.js':
   'console.log':
     'prefix': 'log'
-    'body': 'console.log(${1}, "color:dodgerblue;font-size:20px;", ${2});$3'
+    'body': 'console.log(${1}, "color:deeppink;font-size:20px;", ${2});$3'
