@@ -75,6 +75,7 @@
   "linter-haml": {}
   "linter-ui-default":
     panelHeight: 57
+    showPanel: true
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
