@@ -46,3 +46,7 @@
   'console.log':
     'prefix': 'log'
     'body': 'console.log(${1}, "color:deeppink;font-size:20px;", ${2});$3'
+'.source.protobuf':
+  'proto_gen':
+    'prefix': 'proto_gen'
+    'body': 'syntax = "proto3";\n\npackage ${1};\n\nservice ${1} {};'

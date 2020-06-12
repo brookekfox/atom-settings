@@ -75,7 +75,6 @@
   "linter-haml": {}
   "linter-ui-default":
     panelHeight: 57
-    showPanel: true
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
@@ -102,8 +101,7 @@
   "tool-bar-almighty":
     custom: "/custom_entries.json"
     override: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "vim-mode-plus":
     startInInsertMode: true
   welcome:

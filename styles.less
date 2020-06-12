@@ -465,6 +465,10 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
   font-weight: bold;
   color: @darkmagenta;
 }
+.syntax--keyword.syntax--operator.syntax--nullable-type.syntax--php {
+  font-weight: bold;
+  color: @blue;
+}
 
 .syntax--constant.syntax--language.syntax--php,
 .syntax--constant.syntax--other.syntax--class.syntax--php {
@@ -479,8 +483,7 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 }
 
 .syntax--storage.syntax--modifier.syntax--php,
-.syntax--storage.syntax--type.syntax--function.syntax--php {
-  // color: @orange;
+.syntax--storage.syntax--type.syntax--function.syntax--php, {
   color: @green;
 }
 
@@ -493,6 +496,22 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--php,
 .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--php {
   color: @green!important;
+}
+
+.syntax--meta.syntax--namespace.syntax--php,
+.syntax--keyword.syntax--other.syntax--namespace.syntax--php,
+.syntax--keyword.syntax--other.syntax--use.syntax--php,
+.syntax--keyword.syntax--other.syntax--use-as.syntax--php {
+  color: @purple!important;
+  font-weight: bold;
+}
+
+.syntax--entity.syntax--name.syntax--type.syntax--class.syntax--php,
+.syntax--entity.syntax--name.syntax--type.syntax--namespace.syntax--php,
+.syntax--support.syntax--class.syntax--php {
+  font-weight: bold!important;
+  font-style: italic;
+  color: @green;
 }
 
 .syntax--support.syntax--function.syntax--construct.syntax--php,
@@ -524,31 +543,47 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 
 
 // ----------------------------------------------------------------------- PROTO
-.syntax--storage.syntax--modifier.syntax--prefix.syntax--protobuf {
-  font-weight: 500;
-  color: @darkblue;
+.syntax--storage.syntax--modifier.syntax--prefix.syntax--protobuf,
+.syntax--storage.syntax--type.syntax--instance.syntax--protobuf {
+  font-weight: bold;
+  color: @darkmagenta;
 }
 
 .syntax--instance.syntax--name.syntax--protobuf {
-  font-weight: 400;
+  font-weight: 800;
   color: @darkgrey;
 }
 
 .syntax--entity.syntax--name.syntax--class.syntax--custom.syntax--protobuf,
 .syntax--support.syntax--function.syntax--decl.syntax--protobuf,
-.syntax--keyword.syntax--other.syntax--package.syntax--protobuf {
+.syntax--keyword.syntax--other.syntax--package.syntax--protobuf,
+.syntax--support.syntax--function.syntax--decl.syntax--protobuf,
+.syntax--keyword.syntax--rpc.syntax--rpc.syntax--protobuf {
   font-weight: 400;
-  color: @teal;
+  color: @green;
 }
 
-.syntax--constant.syntax--numeric.syntax--protobuf {
+.syntax--storage.syntax--modifier.syntax--prefix.syntax--protobuf,
+// .syntax--constant.syntax--numeric.syntax--protobuf,
+.syntax--keyword.syntax--rpc.syntax--rpc.syntax--protobuf,
+.syntax--instance.syntax--name.syntax--protobuf {
   font-style: italic;
 }
 
-.syntax--variable.syntax--parameter.syntax--protobuf, .syntax--support.syntax--class.syntax--package.syntax--protobuf {
+.syntax--variable.syntax--parameter.syntax--protobuf,
+.syntax--support.syntax--class.syntax--package.syntax--protobuf {
   font-weight: bold;
   color: @brightpurple;
+  // color: @teal;
 }
+
+.syntax--entity.syntax--name.syntax--function.syntax--rpc.syntax--protobuf {
+  font-weight: bold;
+  // color: @teal;
+  // color: @brightpurple;
+  color: @green;
+}
+
 
 
 
