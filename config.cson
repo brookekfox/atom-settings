@@ -16,6 +16,10 @@
     autoActivationDelay: 500
   autosave:
     enabled: true
+  "color-picker":
+    preferredFormat: "HEX"
+    triggerKey: "H"
+    uppercaseColorValues: true
   core:
     automaticallyUpdate: false
     closeDeletedFileTabs: true
@@ -49,7 +53,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Source Code Pro"
-    fontSize: 12
+    fontSize: 11
     invisibles: {}
     showInvisibles: true
     softWrap: true
@@ -74,7 +78,8 @@
       ]
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 57
+    panelHeight: 128
+    showPanel: true
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
@@ -101,7 +106,8 @@
   "tool-bar-almighty":
     custom: "/custom_entries.json"
     override: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: false
   "vim-mode-plus":
     startInInsertMode: true
   welcome:
