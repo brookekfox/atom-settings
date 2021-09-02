@@ -33,7 +33,7 @@
     background-color: @lightgrey;
     font-size: 8pt;
     font-family: @font, monospace;
-    // font-weight: lighter;
+    font-weight: normal;
     color: @darkblue;
   }
 }
@@ -645,23 +645,49 @@ atom-text-editor.editor .syntax--meta.syntax--structure.syntax--dictionary.synta
 .markdown-preview:not([data-use-github-style]) h5 {
   font-weight: bold;
 }
+
+.syntax--heading-1.syntax--md,
 .markdown-preview:not([data-use-github-style]) h1 {
   color: @darkmagenta;
 }
+.syntax--heading-2.syntax--md,
 .markdown-preview:not([data-use-github-style]) h2 {
   color: @teal;
 }
+.syntax--heading-3.syntax--md,
 .markdown-preview:not([data-use-github-style]) h3 {
-  color: @orange;
+  color: @darkblue;
 }
+.syntax--heading-4.syntax--md,
 .markdown-preview:not([data-use-github-style]) h4 {
-  color: @darkmagenta;
+  color: @purple;
 }
+.syntax--heading-5.syntax--md,
 .markdown-preview:not([data-use-github-style]) h5 {
   color: @teal;
 }
-
+.syntax--heading-6.syntax--md,
 .markdown-preview:not([data-use-github-style]) h6 {
   font-style: italic;
+  color: @orange;
+}
+
+.syntax--heading-1.syntax--md,
+.syntax--heading-2.syntax--md,
+.syntax--heading-3.syntax--md,
+.syntax--heading-4.syntax--md,
+.syntax--heading-5.syntax--md,
+.syntax--heading-6.syntax--md {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.syntax--punctuation.syntax--md {
+  font-weight: bold;
   color: @purple;
+}
+
+.syntax--code.syntax--raw.syntax--markup.syntax--md {
+  font-style: italic;
+  color: @green;
 }
