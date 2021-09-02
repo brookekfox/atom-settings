@@ -43,6 +43,13 @@
       "git-projects"
       "open-on-github"
       "dart"
+      "polymer-ide"
+      "polymer-snippets"
+      "polymer-atom"
+      "language-polymer"
+      "atom-polymer"
+      "angularjs"
+      "angularjs-snippets"
     ]
     followSymlinks: false
     telemetryConsent: "limited"
@@ -78,8 +85,7 @@
       ]
   "linter-haml": {}
   "linter-ui-default":
-    panelHeight: 128
-    showPanel: true
+    panelHeight: 85
   "markdown-pdf":
     border: "10mm"
     format: "Letter"
